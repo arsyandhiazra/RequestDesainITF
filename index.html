@@ -27,8 +27,6 @@
       <circle cx="100" cy="100" r="50" stroke="rgba(212,175,55,0.04)" stroke-width="0.5" fill="none"/>
       <line x1="100" y1="10" x2="100" y2="190" stroke="rgba(212,175,55,0.03)" stroke-width="0.5"/>
       <line x1="10" y1="100" x2="190" y2="100" stroke="rgba(212,175,55,0.03)" stroke-width="0.5"/>
-      <line x1="30" y1="30" x2="170" y2="170" stroke="rgba(212,175,55,0.03)" stroke-width="0.5"/>
-      <line x1="170" y1="30" x2="30" y2="170" stroke="rgba(212,175,55,0.03)" stroke-width="0.5"/>
     </svg>
     <svg class="geo-pattern geo-3" viewBox="0 0 200 200" fill="none">
       <path d="M100 10 L120 80 L190 80 L135 120 L155 190 L100 150 L45 190 L65 120 L10 80 L80 80 Z" stroke="rgba(212,175,55,0.06)" stroke-width="0.5" fill="none"/>
@@ -52,11 +50,8 @@
         <div class="logo-container">
           <div class="logo-icon">
             <svg viewBox="0 0 80 80" fill="none">
-              <!-- Crescent -->
               <path d="M40 8C23.4 8 10 21.4 10 38s13.4 30 30 30c7.5 0 14.4-2.8 19.6-7.3C54.1 65.4 46.5 68 38.5 68 22.2 68 9 54.8 9 38.5S22.2 9 38.5 9c3 0 5.9.4 8.6 1.2C44.7 8.8 42.4 8 40 8z" fill="url(#crescentGrad)"/>
-              <!-- Star -->
               <path d="M58 20l2.5 7.5H68l-6 4.5 2.5 7.5-6-4.5-6 4.5 2.5-7.5-6-4.5h7.5z" fill="url(#starGrad)"/>
-              <!-- Tech Circuit Lines -->
               <line x1="25" y1="45" x2="35" y2="45" stroke="rgba(212,175,55,0.4)" stroke-width="1"/>
               <line x1="30" y1="40" x2="30" y2="50" stroke="rgba(212,175,55,0.4)" stroke-width="1"/>
               <circle cx="30" cy="45" r="2" fill="rgba(212,175,55,0.5)"/>
@@ -140,15 +135,7 @@
               <span class="required-dot"></span>
             </label>
             <div class="input-wrapper">
-              <input
-                type="text"
-                id="nama"
-                name="nama"
-                class="form-input"
-                placeholder="Masukkan nama lengkap kamu…"
-                required
-                autocomplete="name"
-              />
+              <input type="text" id="nama" name="nama" class="form-input" placeholder="Masukkan nama lengkap kamu…" required autocomplete="name"/>
               <div class="input-border"></div>
               <div class="input-glow"></div>
             </div>
@@ -202,14 +189,7 @@
               <span class="required-dot"></span>
             </label>
             <div class="input-wrapper">
-              <input
-                type="text"
-                id="request"
-                name="request"
-                class="form-input"
-                placeholder="Contoh: Poster acara, Banner IG, Sertifikat…"
-                required
-              />
+              <input type="text" id="request" name="request" class="form-input" placeholder="Contoh: Poster acara, Banner IG, Sertifikat…" required/>
               <div class="input-border"></div>
               <div class="input-glow"></div>
             </div>
@@ -232,14 +212,7 @@
               <span class="required-dot"></span>
             </label>
             <div class="input-wrapper textarea-wrapper">
-              <textarea
-                id="keterangan"
-                name="keterangan"
-                class="form-input form-textarea"
-                placeholder="Jelaskan detail request kamu: ukuran, warna, teks yang harus ada, deadline, referensi desain, dll…"
-                rows="5"
-                required
-              ></textarea>
+              <textarea id="keterangan" name="keterangan" class="form-input form-textarea" placeholder="Jelaskan detail request kamu: ukuran, warna, teks yang harus ada, deadline, referensi desain, dll…" rows="5" required></textarea>
               <div class="input-border"></div>
               <div class="input-glow"></div>
             </div>
@@ -269,6 +242,108 @@
             </button>
           </div>
         </form>
+      </div>
+
+      <!-- ═══════════════════════════════════════ -->
+      <!--       DAFTAR REQUEST YANG MASUK         -->
+      <!-- ═══════════════════════════════════════ -->
+      <div class="card request-list-card" id="requestListCard">
+        <div class="card-border-glow"></div>
+
+        <div class="card-header">
+          <div class="card-header-ornament">
+            <svg viewBox="0 0 400 30" fill="none" preserveAspectRatio="none">
+              <path d="M0,15 Q50,5 100,15 Q150,25 200,15 Q250,5 300,15 Q350,25 400,15" stroke="url(#ornLine2)" stroke-width="1" fill="none"/>
+              <defs>
+                <linearGradient id="ornLine2" x1="0" y1="0" x2="400" y2="0">
+                  <stop offset="0%" stop-color="transparent"/>
+                  <stop offset="20%" stop-color="#D4AF37"/>
+                  <stop offset="50%" stop-color="#F4D03F"/>
+                  <stop offset="80%" stop-color="#D4AF37"/>
+                  <stop offset="100%" stop-color="transparent"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+
+          <div class="list-header-row">
+            <h2 class="card-title">
+              <svg class="card-title-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/>
+                <rect x="9" y="3" width="6" height="4" rx="1"/>
+                <line x1="9" y1="12" x2="15" y2="12"/>
+                <line x1="9" y1="16" x2="13" y2="16"/>
+              </svg>
+              Daftar Request Masuk
+            </h2>
+            <span class="request-count" id="requestCount">0</span>
+          </div>
+          <p class="card-desc">Semua request desain yang telah dikirim</p>
+
+          <!-- Filter & Search -->
+          <div class="list-controls">
+            <div class="search-box">
+              <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"/>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+              </svg>
+              <input type="text" id="searchInput" class="search-input" placeholder="Cari nama atau request…"/>
+            </div>
+            <div class="filter-box">
+              <select id="filterDivisi" class="filter-select">
+                <option value="all">Semua Divisi</option>
+                <option value="Acara">🎪 Acara</option>
+                <option value="HumPub">📢 HumPub</option>
+                <option value="PerLog">🏗️ PerLog</option>
+                <option value="Konsumsi">🍽️ Konsumsi</option>
+                <option value="Media">🎨 Media</option>
+                <option value="Sponsorship">🤝 Sponsorship</option>
+              </select>
+            </div>
+            <button class="btn-clear-all" id="btnClearAll" title="Hapus semua request">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="3 6 5 6 21 6"/>
+                <path d="M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2"/>
+              </svg>
+              <span>Hapus Semua</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Request List Body -->
+        <div class="request-list-body" id="requestListBody">
+          <!-- Empty State -->
+          <div class="empty-state" id="emptyState">
+            <div class="empty-icon">
+              <svg viewBox="0 0 80 80" fill="none">
+                <rect x="15" y="10" width="50" height="60" rx="4" stroke="rgba(212,175,55,0.2)" stroke-width="1.5" fill="none"/>
+                <line x1="25" y1="25" x2="55" y2="25" stroke="rgba(212,175,55,0.15)" stroke-width="1.5"/>
+                <line x1="25" y1="35" x2="50" y2="35" stroke="rgba(212,175,55,0.12)" stroke-width="1.5"/>
+                <line x1="25" y1="45" x2="45" y2="45" stroke="rgba(212,175,55,0.1)" stroke-width="1.5"/>
+                <circle cx="58" cy="58" r="14" fill="rgba(26,10,14,0.8)" stroke="rgba(212,175,55,0.2)" stroke-width="1.5"/>
+                <line x1="53" y1="58" x2="63" y2="58" stroke="rgba(212,175,55,0.3)" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <p class="empty-title">Belum Ada Request</p>
+            <p class="empty-desc">Request desain yang dikirim akan muncul di sini</p>
+          </div>
+
+          <!-- No Result State -->
+          <div class="empty-state no-result-state" id="noResultState" style="display:none;">
+            <div class="empty-icon">
+              <svg viewBox="0 0 80 80" fill="none">
+                <circle cx="35" cy="35" r="20" stroke="rgba(212,175,55,0.2)" stroke-width="1.5" fill="none"/>
+                <line x1="50" y1="50" x2="65" y2="65" stroke="rgba(212,175,55,0.2)" stroke-width="2" stroke-linecap="round"/>
+                <line x1="28" y1="35" x2="42" y2="35" stroke="rgba(212,175,55,0.15)" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <p class="empty-title">Tidak Ditemukan</p>
+            <p class="empty-desc">Coba ubah kata kunci atau filter divisi</p>
+          </div>
+
+          <!-- Request Cards Container -->
+          <div class="request-cards" id="requestCards"></div>
+        </div>
       </div>
     </main>
 
@@ -311,6 +386,28 @@
         <button class="btn-modal-close" id="modalCloseBtn">
           <span>Tutup</span>
         </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Delete Confirm Modal -->
+  <div class="modal-overlay" id="deleteModal">
+    <div class="modal delete-modal">
+      <div class="modal-glow"></div>
+      <div class="modal-content">
+        <div class="modal-icon delete-icon">
+          <svg viewBox="0 0 80 80" fill="none">
+            <circle cx="40" cy="40" r="36" stroke="#e74c3c" stroke-width="2" fill="none" opacity="0.6"/>
+            <line x1="30" y1="30" x2="50" y2="50" stroke="#e74c3c" stroke-width="3" stroke-linecap="round"/>
+            <line x1="50" y1="30" x2="30" y2="50" stroke="#e74c3c" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3 class="modal-title delete-title">Hapus Request?</h3>
+        <p class="modal-desc" id="deleteModalDesc">Yakin mau menghapus request ini? Aksi ini tidak bisa dibatalkan.</p>
+        <div class="modal-btn-group">
+          <button class="btn-modal-cancel" id="deleteCancelBtn">Batal</button>
+          <button class="btn-modal-delete" id="deleteConfirmBtn">Hapus</button>
+        </div>
       </div>
     </div>
   </div>
