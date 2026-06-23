@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Islamic TechFest — Design Request</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Floating Particles -->
+  <div class="particles" id="particles"></div>
+
+  <!-- Geometric Islamic Patterns -->
+  <div class="geometric-bg">
+    <svg class="geo-pattern geo-1" viewBox="0 0 200 200" fill="none">
+      <polygon points="100,10 190,60 190,140 100,190 10,140 10,60" stroke="rgba(212,175,55,0.08)" stroke-width="1" fill="none"/>
+      <polygon points="100,30 170,70 170,130 100,170 30,130 30,70" stroke="rgba(212,175,55,0.06)" stroke-width="1" fill="none"/>
+      <polygon points="100,50 150,80 150,120 100,150 50,120 50,80" stroke="rgba(212,175,55,0.04)" stroke-width="1" fill="none"/>
+    </svg>
+    <svg class="geo-pattern geo-2" viewBox="0 0 200 200" fill="none">
+      <circle cx="100" cy="100" r="90" stroke="rgba(212,175,55,0.06)" stroke-width="0.5" fill="none"/>
+      <circle cx="100" cy="100" r="70" stroke="rgba(212,175,55,0.05)" stroke-width="0.5" fill="none"/>
+      <circle cx="100" cy="100" r="50" stroke="rgba(212,175,55,0.04)" stroke-width="0.5" fill="none"/>
+      <line x1="100" y1="10" x2="100" y2="190" stroke="rgba(212,175,55,0.03)" stroke-width="0.5"/>
+      <line x1="10" y1="100" x2="190" y2="100" stroke="rgba(212,175,55,0.03)" stroke-width="0.5"/>
+      <line x1="30" y1="30" x2="170" y2="170" stroke="rgba(212,175,55,0.03)" stroke-width="0.5"/>
+      <line x1="170" y1="30" x2="30" y2="170" stroke="rgba(212,175,55,0.03)" stroke-width="0.5"/>
+    </svg>
+    <svg class="geo-pattern geo-3" viewBox="0 0 200 200" fill="none">
+      <path d="M100 10 L120 80 L190 80 L135 120 L155 190 L100 150 L45 190 L65 120 L10 80 L80 80 Z" stroke="rgba(212,175,55,0.06)" stroke-width="0.5" fill="none"/>
+    </svg>
+  </div>
+
+  <!-- Main Container -->
+  <div class="main-wrapper">
+
+    <!-- Header -->
+    <header class="header">
+      <div class="header-ornament left-ornament">
+        <svg viewBox="0 0 120 20" fill="none">
+          <path d="M0,10 Q30,0 60,10 Q90,20 120,10" stroke="rgba(212,175,55,0.6)" stroke-width="1" fill="none"/>
+          <path d="M0,10 Q30,20 60,10 Q90,0 120,10" stroke="rgba(212,175,55,0.3)" stroke-width="0.5" fill="none"/>
+        </svg>
+      </div>
+
+      <div class="header-content">
+        <div class="bismillah">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</div>
+        <div class="logo-container">
+          <div class="logo-icon">
+            <svg viewBox="0 0 80 80" fill="none">
+              <!-- Crescent -->
+              <path d="M40 8C23.4 8 10 21.4 10 38s13.4 30 30 30c7.5 0 14.4-2.8 19.6-7.3C54.1 65.4 46.5 68 38.5 68 22.2 68 9 54.8 9 38.5S22.2 9 38.5 9c3 0 5.9.4 8.6 1.2C44.7 8.8 42.4 8 40 8z" fill="url(#crescentGrad)"/>
+              <!-- Star -->
+              <path d="M58 20l2.5 7.5H68l-6 4.5 2.5 7.5-6-4.5-6 4.5 2.5-7.5-6-4.5h7.5z" fill="url(#starGrad)"/>
+              <!-- Tech Circuit Lines -->
+              <line x1="25" y1="45" x2="35" y2="45" stroke="rgba(212,175,55,0.4)" stroke-width="1"/>
+              <line x1="30" y1="40" x2="30" y2="50" stroke="rgba(212,175,55,0.4)" stroke-width="1"/>
+              <circle cx="30" cy="45" r="2" fill="rgba(212,175,55,0.5)"/>
+              <circle cx="25" cy="45" r="1.2" fill="rgba(212,175,55,0.3)"/>
+              <circle cx="35" cy="45" r="1.2" fill="rgba(212,175,55,0.3)"/>
+              <defs>
+                <linearGradient id="crescentGrad" x1="10" y1="8" x2="50" y2="68">
+                  <stop offset="0%" stop-color="#D4AF37"/>
+                  <stop offset="100%" stop-color="#F4D03F"/>
+                </linearGradient>
+                <linearGradient id="starGrad" x1="52" y1="20" x2="64" y2="40">
+                  <stop offset="0%" stop-color="#F4D03F"/>
+                  <stop offset="100%" stop-color="#D4AF37"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <h1 class="main-title">
+            <span class="title-line-1">Islamic</span>
+            <span class="title-line-2">TechFest</span>
+          </h1>
+        </div>
+        <div class="subtitle">
+          <span class="sub-dash"></span>
+          <span>Design Request Portal</span>
+          <span class="sub-dash"></span>
+        </div>
+        <p class="tagline">Where Faith Meets Innovation</p>
+      </div>
+
+      <div class="header-ornament right-ornament">
+        <svg viewBox="0 0 120 20" fill="none">
+          <path d="M0,10 Q30,0 60,10 Q90,20 120,10" stroke="rgba(212,175,55,0.6)" stroke-width="1" fill="none"/>
+          <path d="M0,10 Q30,20 60,10 Q90,0 120,10" stroke="rgba(212,175,55,0.3)" stroke-width="0.5" fill="none"/>
+        </svg>
+      </div>
+    </header>
+
+    <!-- Form Card -->
+    <main class="form-section">
+      <div class="card">
+        <div class="card-border-glow"></div>
+
+        <!-- Card Header -->
+        <div class="card-header">
+          <div class="card-header-ornament">
+            <svg viewBox="0 0 400 30" fill="none" preserveAspectRatio="none">
+              <path d="M0,15 Q50,5 100,15 Q150,25 200,15 Q250,5 300,15 Q350,25 400,15" stroke="url(#ornLine)" stroke-width="1" fill="none"/>
+              <defs>
+                <linearGradient id="ornLine" x1="0" y1="0" x2="400" y2="0">
+                  <stop offset="0%" stop-color="transparent"/>
+                  <stop offset="20%" stop-color="#D4AF37"/>
+                  <stop offset="50%" stop-color="#F4D03F"/>
+                  <stop offset="80%" stop-color="#D4AF37"/>
+                  <stop offset="100%" stop-color="transparent"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <h2 class="card-title">
+            <svg class="card-title-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+            Form Request Desain
+          </h2>
+          <p class="card-desc">Silakan isi form di bawah untuk mengajukan request desain kepada Tim Media</p>
+        </div>
+
+        <!-- Form -->
+        <form id="requestForm" class="form" novalidate>
+          <!-- Nama -->
+          <div class="form-group" data-field="nama">
+            <label for="nama" class="form-label">
+              <span class="label-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                  <circle cx="12" cy="7" r="4"/>
+                </svg>
+              </span>
+              <span>Nama Lengkap</span>
+              <span class="required-dot"></span>
+            </label>
+            <div class="input-wrapper">
+              <input
+                type="text"
+                id="nama"
+                name="nama"
+                class="form-input"
+                placeholder="Masukkan nama lengkap kamu…"
+                required
+                autocomplete="name"
+              />
+              <div class="input-border"></div>
+              <div class="input-glow"></div>
+            </div>
+            <span class="error-msg" id="namaError">Nama wajib diisi</span>
+          </div>
+
+          <!-- Divisi -->
+          <div class="form-group" data-field="divisi">
+            <label for="divisi" class="form-label">
+              <span class="label-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+              </span>
+              <span>Divisi</span>
+              <span class="required-dot"></span>
+            </label>
+            <div class="select-wrapper">
+              <select id="divisi" name="divisi" class="form-select" required>
+                <option value="" disabled selected>— Pilih Divisi —</option>
+                <option value="Acara">🎪 Acara</option>
+                <option value="HumPub">📢 HumPub (Humas & Publikasi)</option>
+                <option value="PerLog">🏗️ PerLog (Perlengkapan & Logistik)</option>
+                <option value="Konsumsi">🍽️ Konsumsi</option>
+                <option value="Media">🎨 Media</option>
+                <option value="Sponsorship">🤝 Sponsorship</option>
+              </select>
+              <div class="select-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="6 9 12 15 18 9"/>
+                </svg>
+              </div>
+              <div class="input-border"></div>
+              <div class="input-glow"></div>
+            </div>
+            <span class="error-msg" id="divisiError">Pilih divisi kamu</span>
+          </div>
+
+          <!-- Request -->
+          <div class="form-group" data-field="request">
+            <label for="request" class="form-label">
+              <span class="label-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                </svg>
+              </span>
+              <span>Mau Request Apa?</span>
+              <span class="required-dot"></span>
+            </label>
+            <div class="input-wrapper">
+              <input
+                type="text"
+                id="request"
+                name="request"
+                class="form-input"
+                placeholder="Contoh: Poster acara, Banner IG, Sertifikat…"
+                required
+              />
+              <div class="input-border"></div>
+              <div class="input-glow"></div>
+            </div>
+            <span class="error-msg" id="requestError">Tulis jenis desain yang kamu mau</span>
+          </div>
+
+          <!-- Keterangan -->
+          <div class="form-group" data-field="keterangan">
+            <label for="keterangan" class="form-label">
+              <span class="label-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                  <polyline points="14 2 14 8 20 8"/>
+                  <line x1="16" y1="13" x2="8" y2="13"/>
+                  <line x1="16" y1="17" x2="8" y2="17"/>
+                  <polyline points="10 9 9 9 8 9"/>
+                </svg>
+              </span>
+              <span>Keterangan</span>
+              <span class="required-dot"></span>
+            </label>
+            <div class="input-wrapper textarea-wrapper">
+              <textarea
+                id="keterangan"
+                name="keterangan"
+                class="form-input form-textarea"
+                placeholder="Jelaskan detail request kamu: ukuran, warna, teks yang harus ada, deadline, referensi desain, dll…"
+                rows="5"
+                required
+              ></textarea>
+              <div class="input-border"></div>
+              <div class="input-glow"></div>
+            </div>
+            <div class="textarea-footer">
+              <span class="error-msg" id="keteranganError">Keterangan wajib diisi</span>
+              <span class="char-count" id="charCount">0 / 1000</span>
+            </div>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="form-actions">
+            <button type="submit" class="btn-submit" id="submitBtn">
+              <span class="btn-bg"></span>
+              <span class="btn-content">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"/>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                </svg>
+                <span class="btn-text">Kirim Request</span>
+              </span>
+              <span class="btn-loading">
+                <svg class="spinner" viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="3" fill="none" stroke-dasharray="31.4 31.4" stroke-linecap="round"/>
+                </svg>
+                <span>Mengirim…</span>
+              </span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-ornament">
+        <svg viewBox="0 0 600 20" fill="none" preserveAspectRatio="none">
+          <path d="M0,10 Q75,0 150,10 Q225,20 300,10 Q375,0 450,10 Q525,20 600,10" stroke="rgba(212,175,55,0.2)" stroke-width="0.5" fill="none"/>
+        </svg>
+      </div>
+      <p class="footer-text">
+        <span class="footer-star">✦</span>
+        Islamic TechFest 2025
+        <span class="footer-star">✦</span>
+      </p>
+      <p class="footer-sub">Design Request System — Tim Media</p>
+    </footer>
+  </div>
+
+  <!-- Success Modal -->
+  <div class="modal-overlay" id="successModal">
+    <div class="modal">
+      <div class="modal-glow"></div>
+      <div class="modal-content">
+        <div class="modal-icon">
+          <svg viewBox="0 0 80 80" fill="none">
+            <circle cx="40" cy="40" r="36" stroke="url(#successGrad)" stroke-width="2" fill="none"/>
+            <path d="M24 40 L35 51 L56 30" stroke="url(#successGrad)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" class="check-path"/>
+            <defs>
+              <linearGradient id="successGrad" x1="0" y1="0" x2="80" y2="80">
+                <stop offset="0%" stop-color="#D4AF37"/>
+                <stop offset="100%" stop-color="#F4D03F"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <h3 class="modal-title">Alhamdulillah! ✨</h3>
+        <p class="modal-desc">Request desain kamu berhasil dikirim.<br/>Tim Media akan segera memprosesnya.</p>
+        <div class="modal-summary" id="modalSummary"></div>
+        <button class="btn-modal-close" id="modalCloseBtn">
+          <span>Tutup</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
